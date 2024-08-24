@@ -1,0 +1,10 @@
+Map :
+    map> always accept value and index. it simmiler to foreach
+    arr.map(()=>{});
+
+Key prop :
+        {arr.map((value,index)=><h1 key={index}>Saurabh</h1>)}
+        key prop> the rect want to know each and every elment uniqely thats by the error occur on console if we give uniqe key then the error will desolve
+Fragments: 
+        without creating div and all we can wrap code through Fragments
+        <> Fragments</>
