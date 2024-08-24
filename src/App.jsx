@@ -1,12 +1,11 @@
 import React from "react";
-import Card from "./Components/Card";
-import Map from "./Components/Map";
+import UseState from "./Components/UseState";
 
 const App = () => {
 
   return (
     <div>
-      <Card/>
+      <UseState />
     </div>
   );
 };
