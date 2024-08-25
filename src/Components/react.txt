@@ -8,3 +8,10 @@ Key prop :
 Fragments: 
         without creating div and all we can wrap code through Fragments
         <> Fragments</>
+
+UseState master: 
+                UseState state ko turant update nhi karta, wo UseState state ko apne hissab se update function compeletion ke baad karta  he too fix performance issues
+
+UseState Arrays: 
+
+
