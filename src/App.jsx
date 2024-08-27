@@ -2,14 +2,12 @@ import React from "react";
 import UseState from "./Components/UseState";
 import UseStateD_2 from "./Components/UseStateD_2";
 import UseStateD_3 from "./Components/UseStateD_3";
-
+import UseState_D4 from "./Components/UseState_D4";
 const App = () => {
 
   return (
     <div>
-      {/* <UseState /> */}
-      {/* <UseStateD_2 /> */}
-      <UseStateD_3 />
+      <UseState_D4 />
     </div>
   );
 };
