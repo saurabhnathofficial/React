@@ -4,8 +4,8 @@ import App from './App.jsx'
 import './index.css'
 import Card from './Components/Card.jsx'
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  // <StrictMode>
     <App />
-  </StrictMode>,
+  // {/* </StrictMode>, */}
 )
  
