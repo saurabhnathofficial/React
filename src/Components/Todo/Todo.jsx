@@ -46,20 +46,20 @@ function Todo() {
             <div className="text-4xl font-bold justify-center flex border-2">
                 <p>ToDo</p>
 
-            </div>
+            </div> 
             <div className="flex justify-between gap-4 ">
-                <input className='text-sm p-2 bg-gradient-to-r from-slate-300 to-slate-500  rounded w-full' type="text" placeholder='Enter a Task' value={newTodo} onChange={updateTodoValue} />
-                <button onClick={addNewTask} className='w-40 font-semibold px-4 py-2 bg-sky-500 rounded text-sm'>Add Task</button>
+                <input className='placeholder-white text-sm p-2 py-3 bg-gradient-to-r from-slate-900 to-slate-700  rounded w-full text-white' type="text" placeholder='Enter a Task . . .' value={newTodo} onChange={updateTodoValue} />
+                <button onClick={addNewTask} className='outline-cyan-800 w-40 font-semibold px-4 py-2 bg-gradient-to-r from-indigo-400 to-cyan-400 rounded text-sm'>Add Task</button>
             </div>
 
             <div className="w-full h-full bg-gradient-to-r from-violet-200 to-pink-200 text-xl font-semibold capitalize p-2 ">
                 <ul>
                     {todos.map((todo,index) => (
-                        <li key={todo.id} className='flex gap-3 mb-2 bg-gradient-to-r from-blue-200 to-cyan-200 justify-between border-2 border-orange-200 px-4 py-1 text-1xl'>
+                        <li key={todo.id} className='flex gap-3 mb-2 bg-gradient-to-r from-purple-400 to-indigo-600 justify-between border-2 border-blue-700 px-4 py-1 text-1xl'>
                             <span style={todo.isDone ? { textDecorationLine: "line-through" } : {}}>{index} : {todo.task}</span>
                             <div className="flex gap-3">
-                                <button onClick={() => markAsDone(todo.id)} className={`font-semibold px-2 py-1 ${todo.isDone ? "bg-green-500" : "bg-red-200"} rounded text-sm`}>Mark as Done</button>
-                                <button onClick={() => deleteTodo(todo.id)} className='font-semibold px-2 py-1 bg-red-300 rounded text-sm'>Delete</button>
+                                <button onClick={() => markAsDone(todo.id)} className={`font-semibold px-2 py-1 ${todo.isDone ? "bg-gradient-to-r from-lime-400 to-lime-500" : "bg-gradient-to-r from-indigo-500 to-blue-500"} rounded text-sm`}>{todo.isDone? <span>Done</span> : <span>Mark as Done</span>}</button>
+                                <button onClick={() => deleteTodo(todo.id)} className='font-semibold px-2 py-1 bg-gradient-to-r from-indigo-400 to-cyan-400 rounded text-sm'>Delete</button>
                             </div>
                         </li>
 
