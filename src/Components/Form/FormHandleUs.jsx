@@ -15,6 +15,6 @@ function FormHandleUs() {
             </form>
         </div>
     );
-}
+} 
 
 export default FormHandleUs
