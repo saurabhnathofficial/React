@@ -1,4 +1,7 @@
 import { Routes, Route } from "react-router-dom"
+import Home from "../Components/Route/Home"
+import Gallery from "../Components/Route/Gallery"
+import About from "../Components/Route/About"
 
 const Routing = () => {
   return (
